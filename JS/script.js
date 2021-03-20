@@ -82,6 +82,22 @@ route.addEventListener('change', function(event){
     updateSelectedCount()
 })
 
+const messageSent = document.querySelector('#messagesent')
+
+messageSent.addEventListener('click', function(e){
+    e.preventDefault()
+
+    e.target.textContent = 'Your message has been received. We will be in touch shortly!!'
+})
+
+//this one works as the above event listener
+/*
+document.querySelector('#messagesent').addEventListener('click', function(event){
+    event.preventDefault()
+
+    event.target.textContent = 'Your Message has been received. We will be in touch shortly'
+})*/
+
 $('#payvia').click(function(){
     $('.payments').show()
 })
