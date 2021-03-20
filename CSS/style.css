@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navigation-bar{
+    background-color: #C20C17;
+}
+nav{
+    display: inline-block;
+
+}
+
+nav ul{
+    display: flex;
+    margin: 20px 20px 20px 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 200px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: medium;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: #0CC2B7;
+}
+
+.landing-page-img img{
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+}
+
+#about-us{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#about-us h2{
+    display:inline-block;
+    border-bottom: 2px #C20C17 solid;
+}
+
+.terms-conditions h3{
+    display: inline-block;
+    border-bottom: 2px solid #C20C17;
+}
+
+#book-a-bus h2{
+    padding-left: 40px;
+    display:inline-block;
+    margin-bottom: 30px;
+}
+
+form{
+    padding-left: 30px;
+}
+
+.small{
+    visibility: hidden;
+}
+
+form select{
+    margin-bottom: 20px;
+}
+
+.row-seats{
+    display: flex;
+    margin-left: 230px;
+}
+
+.seat{
+    background-color: wheat;
+    height: 20px;
+    width: 18px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+
+.seat.selected{
+    background-color: #0CC2B7;
+}
+
+.seat.occupied{
+    background-color: black;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}
+
+.showseats.seat:not(.occupied):hover{
+    cursor: default;
+    transform:scale(1);
+}
+
+.showseats{
+    background-color: #f1c5c8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color:black;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showseats li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.showseats li small{
+    margin-left: 2px;
+}
+
+#submitbutton{
+    margin-left: 200px;
+}
+
+.payments{
+    display:none;
+}
+
+.payments img{
+    width: 70px;
+}
+
+.card1{
+    background-color: red;
+}
+
+.footer1 h6{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.footer1 ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.footer1 ul li a{
+    color: black;
+    font-size: medium;
+    
+}
+
+.footer1 ul li a:hover{
+    cursor: pointer;
+    background-color: #0CC2B7;
+}
+
+.footer2 h6{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.footer2 ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.footer2 ul li a{
+    color: black;
+    font-size: medium;
+}
+
+.footer2 ul li a:hover{
+    cursor: pointer;
+    background-color: #0CC2B7;
+}
+
+
+#footer-contact-form{
+   margin-right: 30px;
+
+}
+
+#footer-contact-form h6{
+    margin-top: 20px;
+}
+
+#footer-contact-form input{
+    width: 200px;
+}
+

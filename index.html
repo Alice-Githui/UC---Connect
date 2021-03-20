@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="CSS/style.css" rel="stylesheet">
+  <title>UC Booking App</title>
+</head>
+<body>
+  <div class = "container-fluid">
+    <div class= "navigation-bar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href = "#about-us">About Us</a></li>
+          <li><a href="#book-a-bus">Book-A-Bus</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class = "landing-page-img">
+      <img src="Images/landingimage.jpeg" alt="bus driving through the countryside">
+    </div>
+
+    <div id = "about-us">
+      <h2>About Us</h2>
+       <p>Upcountry Connect seeks to solve the problem of congestion and inconvenience by allowing you to book you bus/matatu beforehand.
+       <br>
+         Now, you can plan your departure conveniently and avoid congestion and time wastage at the bus station.     
+       </p>
+    </div>
+    <div class= "terms-conditions">
+      <h3>Terms and Conditions</h3>
+      <ol>
+        <li>All fares to be paid at least an hour before departure.</li>
+        <li>A tickect once booked can not be returned.</li>
+        <li>Arrive at the depature points earlier.</li>
+        <li>Main departure points:</li>
+        <ul>
+          <li>Railways- Guardian and EasyCoach</li>
+          <li>Afya Centre - ENA Coach and Transline</li>
+        </ul>
+      </ol>
+    </div>
+    <div id= "book-a-bus">
+    <div class = "card">
+      <div class= "row">
+        <div class="col-md-6">
+          <div class="form-entries">
+            <h2>Book A Bus</h2>
+            <form id= "formdata">
+              <div id="name" class="form-group">
+                <label for="user-name">Full Name:</label>
+                  <input type= "text" id="user-name" class="form-control">
+                  <small class="small">Error Message</small>
+              </div>
+              <div id="phonenumber" class="form-group">
+                <label for="user-number">Enter your Phone Number:</label>
+                  <input type= "text" id="user-number" class="form-control">
+                  <small class="small">Error Message</small>
+              </div>
+              <div id="bus-route" class="form-group">
+                <label> Choose Your Preferred Route:</label>
+                <select id= "routes" class="form-control">
+                  <option value = "500">Nairobi-Nakuru (Kshs. 500)</option>
+                  <option value = "500">Nakuru - Nairobi(Kshs. 500)</option>
+                  <option value= "1200">Nairobi-Kisumu(Kshs. 1,200)</option>
+                  <option value= "1200">Kisumu-Nairobi(Kshs. 1,200)</option>
+                  <option value= "1300">Nairobi-Oyugis(Kshs. 1,300)</option>
+                  <option value= "1300">Oyugis-Nairobi(Kshs. 1,300)</option>
+                </select>                
+              </div>
+              <div id="bus-option" class="form-group">
+                <label>Choose Your Preferred Bus</label>
+                <select class="form-control" id="buses">
+                  <option value = "Guardian">Guardian</option>
+                  <option value = "EasyCoach">Easy Coach</option>
+                  <option value = "Transline">Transline</option>
+                  <option value = "ENA Coach">ENA Coach</option>
+                </select>
+              </div>
+              <ul class = "showseats">
+                <li>
+                    <div class= "seat"></div>
+                    <small>N/A</small>
+                </li>
+                <li>
+                    <div class= "seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class= "seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+              <div class="container">
+                <div class= "bus-seats">
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class = "row-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                  <div class="row-seats">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="travel-time" class="form-group">
+                <label>Choose Your Preferred Time:</label>
+                  <select class="form-control" id="time-of-travel">
+                    <option value ="6:00am">6:00am</option>
+                    <option value ="7:00am">7:00am</option>
+                    <option value ="8:00am">8:00am</option>
+                    <option value="9:00am">9:00am</option>
+                  </select>
+              </div>
+              <div id="travel-date" class="form-group">
+                <label for="travel-date">Choose Your Travel Date:</label>
+                  <input type="date" id="travel-date" min="2021-03-21" class="form-control">
+              </div>
+            </form>
+            <br>
+            <a href="#tickets">
+              <button type="submit" class = "btn btn-success" id= "submitbutton">Submit</button>
+            </a>
+
+            
+          </div>
+          <br>
+
+        </div>
+        <div class = "col-md-6">
+          <div class="tickets" id="tickets">
+            <h3>Ticket Summary:</h3>
+            <h5>Your ticket summary is as follows:</h5>
+            <p id="ticket-summary">You have booked <span id="booked-seats">0</span> seats at a total cost of Kshs. <span id="total-price">0</span>
+              <ul id = "list"></ul>
+            </p>
+          </div>
+          <p id="payvia"><strong>Pay Your Tickets:</strong></p>
+          <div class="payments">
+            <img src="Images/mpesa.png" alt="mpesa-icon">
+            <p>Pay Via Mpesa:
+              <ul>
+                <li>Paybill Number: 123456</li>
+                <li>Account Name: Your Name</li>
+              </ul>
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+      
+
+    </div>
+    </div>
+    <div class="footer" id="footer">
+      <div class="card1">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer1">
+              <h6>What We Do:</h6>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#book-a-bus">Book-A-Bus</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+              </ul>
+
+            </div>  
+
+          </div>
+          <div class="col-md-3">
+            <div class="footer2">
+              <h6>Socials:</h6>
+              <ul>
+                <li><a href= "http://facebook.com">Facebook</a></li>
+                <li><a href="http://twitter.com">Twitter</a></li>
+                <li><a href="http://instagram.com">Instagram</a></li>
+                <li><a href="#">Our Website</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div id="footer-contact-form" class="form-group">
+              <h6>Send us a Message:</h6>
+              <form>
+                <label>Name:</label>
+                  <input type="text" id="contact-form-name" placeholder="Enter Your Name:" class="form-control">
+                <label>Email:</label>
+                  <input type="email" id="contact-form-email" placeholder="Enter Your email:" class="form-control">
+                <br>
+                <textarea class="form-control">Message:</textarea>
+                <br>
+                <button type="submit">Submit</button>
+              </form>
+              
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>  
+</body>
+</html>
